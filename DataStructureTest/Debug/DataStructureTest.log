@@ -1,0 +1,8 @@
+﻿  main.cpp
+c:\users\bcs\source\repos\datastructuretest\datastructuretest\bubblesort.h(15): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\bcs\source\repos\datastructuretest\datastructuretest\bubblesort.h(17): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\bcs\source\repos\datastructuretest\datastructuretest\selectionsort.h(17): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\bcs\source\repos\datastructuretest\datastructuretest\selectionsort.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\bcs\source\repos\datastructuretest\datastructuretest\insertionsort.h(15): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\bcs\source\repos\datastructuretest\datastructuretest\main.cpp(4): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  DataStructureTest.vcxproj -> C:\Users\BCS\source\repos\DataStructureTest\Debug\DataStructureTest.exe
