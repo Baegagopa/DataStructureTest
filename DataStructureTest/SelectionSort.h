@@ -14,11 +14,11 @@ public:
 	{
 		int minimumValue; 
 		int minimumIdx;
-		for (int i = 0; i < arr.size() - 1; i++)
+		for (size_t i = 0; i < arr.size() - 1; i++)
 		{
 			minimumValue = arr[i];
 			minimumIdx = i;
-			for (int j = i + 1; j < arr.size(); j++)
+			for (size_t j = i + 1; j < arr.size(); j++)
 			{
 				if (minimumValue > arr[j])
 				{

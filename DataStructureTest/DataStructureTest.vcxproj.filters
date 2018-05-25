@@ -13,22 +13,31 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Sort">
+      <UniqueIdentifier>{575dc631-a3a2-4cf4-97c1-c1e9fd3c85e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestFactory.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="BubbleSort.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="SelectionSort.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="SortTestBace.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="BubbleSort.h">
+      <Filter>헤더 파일\Sort</Filter>
+    </ClInclude>
     <ClInclude Include="InsertionSort.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeSort.h">
+      <Filter>헤더 파일\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSort.h">
+      <Filter>헤더 파일\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionSort.h">
+      <Filter>헤더 파일\Sort</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

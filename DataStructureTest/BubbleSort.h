@@ -12,9 +12,9 @@ class BubbleSort : public SortTestBace
 public:
 	void Sort(std::vector<int> arr)
 	{
-		for (int i = 0; i < arr.size()-1; i++)
+		for (size_t i = 0; i < arr.size()-1; i++)
 		{
-			for (int j = 0; j < arr.size()-1; j++)
+			for (size_t j = 0; j < arr.size()-1; j++)
 			{
 				if (arr[j] > arr[j+1])
 				{
