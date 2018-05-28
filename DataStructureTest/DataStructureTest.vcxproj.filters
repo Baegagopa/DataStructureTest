@@ -16,6 +16,9 @@
     <Filter Include="헤더 파일\Sort">
       <UniqueIdentifier>{575dc631-a3a2-4cf4-97c1-c1e9fd3c85e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\DataStructure">
+      <UniqueIdentifier>{47064abb-fd73-4ec0-bcd8-591d480713f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestFactory.h">
@@ -38,6 +41,18 @@
     </ClInclude>
     <ClInclude Include="SelectionSort.h">
       <Filter>헤더 파일\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>헤더 파일\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>헤더 파일\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>헤더 파일\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructureBace.h">
+      <Filter>헤더 파일\DataStructure</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

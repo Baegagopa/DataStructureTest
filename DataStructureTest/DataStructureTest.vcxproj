@@ -119,12 +119,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="DataStructureBace.h" />
     <ClInclude Include="InsertionSort.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SortTestBace.h" />
+    <ClInclude Include="Stack.h" />
     <ClInclude Include="TestFactory.h" />
+    <ClInclude Include="Queue.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
