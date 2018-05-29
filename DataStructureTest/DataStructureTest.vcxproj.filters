@@ -24,9 +24,6 @@
     <ClInclude Include="TestFactory.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SortTestBace.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="BubbleSort.h">
       <Filter>헤더 파일\Sort</Filter>
     </ClInclude>
@@ -53,6 +50,15 @@
     </ClInclude>
     <ClInclude Include="DataStructureBace.h">
       <Filter>헤더 파일\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="SortTestBace.h">
+      <Filter>헤더 파일\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="Heap.h">
+      <Filter>헤더 파일\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapSort.h">
+      <Filter>헤더 파일\Sort</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

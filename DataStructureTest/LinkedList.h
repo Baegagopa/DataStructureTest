@@ -1,6 +1,7 @@
 #pragma once
-#include <assert.h>
 #include "DataStructureBace.h"
+#include <assert.h>
+
 template<typename T>
 struct Node
 {

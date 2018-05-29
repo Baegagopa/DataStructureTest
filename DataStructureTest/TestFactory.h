@@ -6,6 +6,7 @@
 #include "InsertionSort.h"
 #include "MergeSort.h"
 #include "QuickSort.h"
+#include "HeapSort.h"
 
 enum SORT_TESTCASE
 {
@@ -14,6 +15,7 @@ enum SORT_TESTCASE
 	INSERTION,
 	MERGE,
 	QUICK,
+	HEAP,
 };
 
 class TestFactory
@@ -28,6 +30,7 @@ public :
 			case SORT_TESTCASE::INSERTION: return new InsertionSort();
 			case SORT_TESTCASE::MERGE: return new MergeSort();
 			case SORT_TESTCASE::QUICK: return new QuickSort();
+			case SORT_TESTCASE::HEAP: return new HeapSort();
 		}
 		return NULL;
 	}
