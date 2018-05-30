@@ -1,2 +1,3 @@
 ﻿  main.cpp
+c:\users\bcs\documents\git\datastructuretest\datastructuretest\binarysearchtree.h(199): warning C4715: 'BinarySearchTree<int>::SearchNode': 모든 제어 경로에서 값을 반환하지는 않습니다.
   DataStructureTest.vcxproj -> C:\Users\BCS\Documents\Git\DataStructureTest\Debug\DataStructureTest.exe

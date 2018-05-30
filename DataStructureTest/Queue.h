@@ -1,5 +1,6 @@
 #pragma once
 #include "DataStructureBace.h"
+#include <vector>
 #include <assert.h>
 
 template <typename T>
@@ -9,7 +10,7 @@ public:
 	Queue(int size)
 	{
 		head = 0;
-		dataArr = new T[size];
+		dataArr(size);
 		this->size = size;
 	}
 
@@ -52,7 +53,7 @@ public:
 
 
 private:
-	T* dataArr;
+	std::vector<T> dataArr;
 	int head;
 	int size;
 	int cnt;

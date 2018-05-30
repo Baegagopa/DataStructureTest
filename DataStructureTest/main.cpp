@@ -4,22 +4,27 @@
 #include "Stack.h"
 #include "LinkedList.h"
 #include "Heap.h"
+#include "BinarySearchTree.h"
+
 int main()
 {
-	//std::vector<int> arr = { 6,4,1,3,5,2 };
-	//TestFactory().CreateSortTest(SORT_TESTCASE::QUICK)->Action(arr);
+	/*std::vector<int> arr = { 7,6,5,4,2,1,3 };
+	TestFactory().CreateSortTest(SORT_TESTCASE::QUICK)->Action(arr);
 
-	Heap<int> b(10);
+	Heap<int> a(arr);
+	a.PrintAll();
+	std::cout << std::endl;
 
-	b.Add(8);
-	b.Add(5);
-	b.Add(7);
-	b.Add(9);
-	b.Add(4);
-	b.Add(2);
-	b.Add(6);
+	TestFactory().CreateSortTest(SORT_TESTCASE::HEAP)->Action(arr);*/
 
-	TestFactory().CreateSortTest(SORT_TESTCASE::HEAP)->Action(b.TransDataArrVector());
+	BinarySearchTree<int> tree;
+	tree.Add(3);
+	tree.Add(5);
+	tree.Add(6);
+	tree.Add(1);
+
+	std::cout << tree.Search(3);
+
 
 
 	return 0;

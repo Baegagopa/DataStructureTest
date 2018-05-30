@@ -7,91 +7,93 @@
 template <typename T>
 class Heap : public DataStructureBace
 {
+private:
+	std::vector<T> dataArr;
+	int cnt;
+
 public:
+	Heap(std::vector<T> tempArr)
+	{
+		cnt = tempArr.size();
+		dataArr = tempArr;
+
+		Heapify();
+	}
+
 	Heap(int size)
 	{
 		cnt = 0;
-		dataArr = new T[size];
-		this->size = size;
-	}
-	~Heap()
-	{
-		delete[] dataArr;
+		dataArr.resize(size);
 	}
 
-	void SwapValue(int& a, int& b)
+	void SwapValue(int idxA, int idxB)
 	{
 		int temp;
-		temp = a;
-		a = b;
-		b = temp;
+		temp = dataArr[idxA];
+		dataArr[idxA] = dataArr[idxB];
+		dataArr[idxB] = temp;
 	}
 
+	void Heapify()
+	{
+		int idx = (cnt - 1) / 2;
+		while (idx >= 0)
+		{
+			SiftDown(idx);
+			idx--;
+		}
+	}
+
+	void SiftDown(int idx, int UntilCheck)
+	{
+		int l = idx * 2 + 1;
+		int r = l + 1;
+		int max = idx;
+		if (l < UntilCheck -1&& dataArr[l] > dataArr[idx])
+			max = l;
+		if (r < UntilCheck -1&& dataArr[r] > dataArr[max])
+			max = r;
+		if (max != idx)
+		{
+			SwapValue(idx, max);
+			SiftDown(max, UntilCheck);
+		}
+	}
 
 	void Add(int data) 
 	{
-		if (size <= cnt)
+		if (dataArr.size() <= cnt)
 			assert(!"overflow");
 
 		int idx = cnt++;
 		dataArr[idx] = data;
 
 		int parentIdx = (idx - 1) / 2;
-		while (dataArr[idx] > dataArr[parentIdx]) {
-
-			SwapValue(dataArr[idx], dataArr[parentIdx]);
+		while (dataArr[idx] > dataArr[parentIdx])
+		{
+			SwapValue(idx, parentIdx);
 			idx = parentIdx;
 			parentIdx = (idx - 1) / 2;
-
 		}
-
-		PrintAll();
 		
 	}
 
 	void Delete()
 	{
-		
-		SwapValue(dataArr[0], dataArr[--cnt]);
+		SwapValue(0, --cnt);
 		dataArr[cnt] = NULL;
 
-		int idx = 0;
-		int child = idx * 2 + 1;
-		while (cnt >= idx * 2)
-		{
-			if (dataArr[idx] > dataArr[child] && dataArr[idx] > dataArr[child + 1])
-				break;
-			else if (dataArr[idx] < dataArr[child] && dataArr[idx] < dataArr[child + 1])
-			{
-				if (dataArr[child] > dataArr[child + 1])
-					SwapValue(dataArr[idx], dataArr[child]);
-				else
-					SwapValue(dataArr[idx], dataArr[child + 1]);
-			}
-			else
-			{
-				if (dataArr[idx] < dataArr[child])
-					SwapValue(dataArr[idx], dataArr[child]);
-				else if (dataArr[idx] < dataArr[child + 1])
-					SwapValue(dataArr[idx], dataArr[child + 1]);
-				else
-					break;
-			}
-			idx = idx * 2 + 1;
-			child = idx * 2 + 1;
-		}
+		SiftDown(0);
 	}
 
-	std::vector<T> TransDataArrVector()
-	{		
-		std::vector<T> tempArr(cnt);
-		memcpy(&tempArr[0], dataArr, sizeof(T) * cnt);
-		return tempArr;
+	std::vector<T>& GetDataArr()
+	{
+		return dataArr;
 	}
 
 	int Size()
 	{
-		return size;
+		return dataArr.size();
 	}
 
 	void PrintAll() override
@@ -104,7 +106,21 @@ public:
 	}
 
 private:
-	T * dataArr;
-	int cnt;
-	int size;
+	Heap();
+
+	void SiftDown(int idx)
+	{
+		int l = idx * 2 + 1;
+		int r = l + 1;
+		int max = idx;
+		if (l <= cnt - 1 && dataArr[l] > dataArr[idx])
+			max = l;
+		if (r <= cnt - 1 && dataArr[r] > dataArr[max])
+			max = r;
+		if (max != idx)
+		{
+			SwapValue(idx, max);
+			SiftDown(max);
+		}
+	}
 };

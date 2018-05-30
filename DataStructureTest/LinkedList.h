@@ -3,10 +3,10 @@
 #include <assert.h>
 
 template<typename T>
-struct Node
+struct Node_List
 {
 	T data;
-	Node* next;
+	Node_List* next;
 };
 
 template<typename T>
@@ -16,7 +16,7 @@ public:
 	LinkedList()
 	{
 		cnt = 0;
-		head = new Node<int>;
+		head = new Node_List<int>;
 		head->next = nullptr;
 		head->data = NULL;
 	}
@@ -29,7 +29,7 @@ public:
 
 	void ADD(T data)
 	{
-		Node<T>* temp = new Node<int>;
+		Node_List<T>* temp = new Node_List<int>;
 		temp->data = data;
 		if (head == NULL)
 		{
@@ -45,12 +45,12 @@ public:
 
 	void Delete(T data)
 	{
-		Node<T>* temp = head;
+		Node_List<T>* temp = head;
 		while (temp->next != NULL)
 		{
 			if (temp->next->data == data)
 			{
-				Node<T>* deleteNode = temp->next;
+				Node_List<T>* deleteNode = temp->next;
 				temp->next = temp->next->next;
 				delete deleteNode;
 				cnt--;
@@ -63,7 +63,7 @@ public:
 
 	void Erase()
 	{
-		Node<T>* deleteNode;
+		Node_List<T>* deleteNode;
 		while (head->next != NULL)
 		{
 			deleteNode = head->next;
@@ -81,6 +81,6 @@ public:
 		return cnt;
 	}
 private:
-	Node<T> * head;
+	Node_List<T> * head;
 	int cnt;
 };
