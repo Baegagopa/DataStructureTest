@@ -18,14 +18,22 @@ int main()
 	TestFactory().CreateSortTest(SORT_TESTCASE::HEAP)->Action(arr);*/
 
 	BinarySearchTree<int> tree;
-	tree.Add(3);
-	tree.Add(5);
-	tree.Add(6);
+
+	tree.Add(2);
 	tree.Add(1);
+	tree.Add(5);
+	tree.Add(4);
+	tree.Add(8);
+	tree.Add(7);
+	tree.Add(10);
+	tree.Add(6);
+	tree.Add(11);
 
-	std::cout << tree.Search(3);
+	tree.PrintAll();
 
-
+	tree.Delete(5);
+	tree.PrintAll();
+	std::cout << std::endl;
 
 	return 0;
 }
