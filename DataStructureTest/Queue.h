@@ -10,7 +10,7 @@ public:
 	Queue(int size)
 	{
 		head = 0;
-		dataArr(size);
+		dataArr.resize(size);
 		this->size = size;
 	}
 

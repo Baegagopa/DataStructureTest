@@ -5,7 +5,7 @@
 #include "LinkedList.h"
 #include "Heap.h"
 #include "BinarySearchTree.h"
-
+#include "DFS.h"
 int main()
 {
 	/*std::vector<int> arr = { 7,6,5,4,2,1,3 };
@@ -34,6 +34,12 @@ int main()
 	tree.Delete(5);
 	tree.PrintAll();
 	std::cout << std::endl;
+
+	tree.PostorderTraversal();
+
+	std::vector<std::vector<int>> arr = { {1, 2},{0, 3},{ 0,4,5},{1},{2,6},{2},{4} };
+	DFS dfs;
+	std::vector<int> temp = dfs.VisitVertex(arr);
 
 	return 0;
 }

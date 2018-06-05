@@ -119,8 +119,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="BinarySearchTree.hpp" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="DataStructureBace.h" />
+    <ClInclude Include="DFS.h" />
     <ClInclude Include="Heap.h" />
     <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertionSort.h" />

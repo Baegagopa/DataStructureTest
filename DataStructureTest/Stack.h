@@ -10,7 +10,7 @@ public:
 	Stack(int size)
 	{
 		cnt = 0;
-		dataArr(size);
+		dataArr.resize(size);
 		this->size = size;
 	}
 
@@ -35,6 +35,11 @@ public:
 	int Size()
 	{
 		return size;
+	}
+
+	int Count()
+	{
+		return cnt;
 	}
 
 

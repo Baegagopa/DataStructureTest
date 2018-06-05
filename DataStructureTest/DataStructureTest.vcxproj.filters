@@ -19,6 +19,9 @@
     <Filter Include="헤더 파일\DataStructure">
       <UniqueIdentifier>{47064abb-fd73-4ec0-bcd8-591d480713f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Algorithm">
+      <UniqueIdentifier>{60a65a29-bb18-4120-99ba-379e70662879}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestFactory.h">
@@ -62,6 +65,12 @@
     </ClInclude>
     <ClInclude Include="BinarySearchTree.h">
       <Filter>헤더 파일\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearchTree.hpp">
+      <Filter>헤더 파일\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DFS.h">
+      <Filter>헤더 파일\Algorithm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
