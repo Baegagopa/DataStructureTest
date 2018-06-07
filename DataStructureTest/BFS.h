@@ -1,23 +1,23 @@
 #pragma once
-#include "Stack.h"
+#include "Queue.h"
 #include <vector>
 
-class DFS
+class BFS
 {
 public:
 	std::vector<int> VisitVertex(std::vector<std::vector<int>> v)
 	{
-		Stack<int> stack(v.size());
+		Queue<int> queue(v.size());
 		std::vector<int> visited;
-		stack.Push(0);
+		queue.Enqueue(0);
 
 		int cur;
-		while (stack.Count() != 0)
+		while (queue.Count() != 0)
 		{
-			cur = stack.Pop();
+			cur = queue.Dequeue();
 			for (int Neighbor : v[cur])
 				if (std::find(visited.begin(), visited.end(), Neighbor) == visited.end())
-					stack.Push(Neighbor);
+					queue.Enqueue(Neighbor);
 			visited.push_back(cur);
 		}
 		return visited;

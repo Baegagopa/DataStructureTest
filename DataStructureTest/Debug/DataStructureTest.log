@@ -1,2 +1,9 @@
 ﻿  main.cpp
+c:\users\bcs\documents\git\datastructuretest\datastructuretest\maxheap.h(13): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+  c:\users\bcs\documents\git\datastructuretest\datastructuretest\maxheap.h(12): note: 클래스 템플릿 멤버 함수 'void MaxHeap<int>::Add(T)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              T=int
+          ]
+  c:\users\bcs\documents\git\datastructuretest\datastructuretest\heapsort.h(12): note: 컴파일 중인 클래스 템플릿 인스턴스화 'MaxHeap<int>'에 대한 참조를 확인하세요.
   DataStructureTest.vcxproj -> C:\Users\BCS\Documents\Git\DataStructureTest\Debug\DataStructureTest.exe

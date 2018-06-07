@@ -118,16 +118,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BFS.h" />
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="BinarySearchTree.hpp" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="DataStructureBace.h" />
     <ClInclude Include="DFS.h" />
-    <ClInclude Include="Heap.h" />
+    <ClInclude Include="HeapBace.h" />
     <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="MinHeap.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SortTestBace.h" />

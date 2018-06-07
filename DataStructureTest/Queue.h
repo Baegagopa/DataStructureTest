@@ -51,6 +51,10 @@ public:
 		return size;
 	}
 
+	int Count()
+	{
+		return cnt;
+	}
 
 private:
 	std::vector<T> dataArr;

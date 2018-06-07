@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include "Heap.h"
+#include "MaxHeap.h"
 #include "SortTestBace.h"
 
 class HeapSort : public SortTestBace
@@ -9,7 +9,7 @@ class HeapSort : public SortTestBace
 public:
 	void Sort(std::vector<int>& arr)
 	{
-		Heap<int> heap(arr);
+		MaxHeap<int> heap(arr);
 		heap.Heapify();
 		for (size_t i = 0; i < arr.size(); i++)
 		{
